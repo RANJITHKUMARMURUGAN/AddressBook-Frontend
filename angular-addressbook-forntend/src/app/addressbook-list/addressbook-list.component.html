@@ -8,6 +8,7 @@
             <th>State</th>
             <th>Zip Code</th>
             <th>Phone Number</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +21,13 @@
             <td>{{ addressbook.state }}</td>
             <td>{{ addressbook.zip }}</td>
             <td>{{ addressbook.phone }}</td>
+            <!-- <td>
+                <img id={{addressbook.id}} (click)="updateAddressbook(addressbook.id)" src="../../assets/icons/create-black-18dp.svg" alt="edit">
+            </td> -->
+            <td>
+                <img id={{addressbook.id}} (click)="updateAddressbook(addressbook.id)" src="../../assets/icons/create-black-18dp.svg" />
+                <img id={{addressbook.id}} (click)="deleteAddressbook(addressbook.id)" src="../../assets/icons/delete-black-18dp.svg" />
+            </td>
         </tr>
     </tbody>
 </table>
