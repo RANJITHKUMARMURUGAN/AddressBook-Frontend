@@ -1,0 +1,25 @@
+<h2>Person Details</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fullname</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- here am creating a variable define a components create one array like addressbook -->
+        <tr *ngFor="let addressbook of addressbook">
+            <!-- interpolisn in angular access the properties for the object-->
+            <td>{{ addressbook.name }}</td>
+            <td>{{ addressbook.address }}</td>
+            <td>{{ addressbook.city }}</td>
+            <td>{{ addressbook.state }}</td>
+            <td>{{ addressbook.zip }}</td>
+            <td>{{ addressbook.phone }}</td>
+        </tr>
+    </tbody>
+</table>
