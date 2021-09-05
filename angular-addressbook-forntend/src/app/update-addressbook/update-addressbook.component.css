@@ -1,19 +1,37 @@
+.submit{
+    margin-left: 45%;
+    border-radius: 20px;
+}
 .button {
-    background-color: #4577ff;
+    /* background-color: #4577ff; */
+    background-color: rgb(209, 205, 205);
     border: none;
-    color: white;
+    color: black;
     padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 20px;
     cursor: pointer;
     border-radius: 5px;
-    width: 100px;
+    width: 20%;
     height: 50px
+    
   }
-  .submit{
-      margin-left: 70%;
-      border-radius: 20px;
+  .success{
+    border-color: #8e9693;
+    color: rgb(21, 22, 22);
+  }
+  .success:hover {
+    background-color: #4577ff;
+    color: rgb(255, 255, 255);
+  }
+  .dark{
+    border-color: #8e9693;
+    color: rgb(21, 22, 22);
+  }
+  .dark:hover{
+    background-color: #717177;
+    color: rgb(255, 255, 255);
   }

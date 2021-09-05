@@ -1,7 +1,10 @@
-<h2>Person Details</h2>
+<div class="person-text">
+    <h2 class="person-text">Person Details</h2>
+</div>
+
 <table class="table table-striped">
     <thead>
-        <tr>
+        <tr class="row-content">
             <th>Fullname</th>
             <th>Address</th>
             <th>City</th>
@@ -13,7 +16,7 @@
     </thead>
     <tbody>
         <!-- here am creating a variable define a components create one array like addressbook -->
-        <tr *ngFor="let addressbook of addressbook">
+        <tr *ngFor="let addressbook of addressbook" class="align">
             <!-- interpolisn in angular access the properties for the object-->
             <td>{{ addressbook.name }}</td>
             <td>{{ addressbook.address }}</td>
@@ -25,8 +28,10 @@
                 <img id={{addressbook.id}} (click)="updateAddressbook(addressbook.id)" src="../../assets/icons/create-black-18dp.svg" alt="edit">
             </td> -->
             <td>
-                <img id={{addressbook.id}} (click)="updateAddressbook(addressbook.id)" src="../../assets/icons/create-black-18dp.svg" />
-                <img id={{addressbook.id}} (click)="deleteAddressbook(addressbook.id)" src="../../assets/icons/delete-black-18dp.svg" />
+                <img id={{addressbook.id}} (click)="updateAddressbook(addressbook.id)"
+                    src="../../assets/icons/create-black-18dp.svg" />
+                <img id={{addressbook.id}} (click)="deleteAddressbook(addressbook.id)"
+                    src="../../assets/icons/delete-black-18dp.svg" />
             </td>
         </tr>
     </tbody>
