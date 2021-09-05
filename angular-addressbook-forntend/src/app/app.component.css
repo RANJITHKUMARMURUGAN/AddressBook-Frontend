@@ -1,0 +1,59 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(212, 212, 212, 0.151);
+    padding: 20px 0 18px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.nav-link{
+    color: white;
+}
+.info{
+    background-color: rgb(43, 128, 255);
+    color: white;
+    outline: none;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none; 
+}
+.add-info{
+    text-decoration: none;
+    color: white;  
+    background-color: rgb(43, 128, 255);
+    opacity: 1;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid #008CFF;
+    width: 80%;
+}
+.logo-content-img {
+    border: solid 0px #42515f;
+}
+.address-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #008CFF;
+    text-transform: capitalize;
+}
+.address-book {
+    color: #1b2d3d;
+}

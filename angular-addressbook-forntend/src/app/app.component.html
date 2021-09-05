@@ -1,20 +1,50 @@
 <h1 class="text-center">{{title}}</h1>
-
 <div class="container">
+  <header class="header-content header">
+    <div class="logo-content">
+      <img src="../assets/images/addressbook.jpeg" alt="">
+      <div>
+        <span class="address-text">ADDRESS</span><br>
+        <span class="address-text address-book">BOOK</span>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- <div class="container">
   <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a routerLink="addressbook" routerLinkActive="active" class="nav-link">AddressBook List</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="create-addressbook" routerLinkActive="active" class="nav-link">Create Address</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a type="button" routerLink="addressbook" routerLinkActive="active" class="nav-link btn btn-secondary">AddressBook List</a>
+        </li>
+
+        <li class="nav-item">
+          <a type="button" routerLink="create-addressbook" routerLinkActive="active" class="nav-link btn btn-secondary">Create Address</a>
+        </li>
+
+      </ul>
+    </div>
   </nav>
-</div>
-
+</div> -->
 <div class="container">
-  <router-outlet></router-outlet>
-</div>
+  <div class="main-content">
+    <div class="header-content">
 
+      <div class="address-detail-text">
+        <a type="button" routerLink="addressbook" routerLinkActive="active" class="add-info">AddressBook List
+        </a>
+      </div>
+
+      <a routerLink="/create-addressbook" routerLinkActive="active" class="info">
+        <img src="../assets/icons/add-24px.svg" alt="">Add User
+      </a>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 <!-- <app-addressbook-list></app-addressbook-list> -->
