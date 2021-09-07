@@ -35,4 +35,19 @@
     background-color: #717177;
     color: rgb(255, 255, 255);
   }
-  
+  .card-title-header{
+    background-color: #007fff;
+    display: flex;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center;
+  }
+.text-center{
+  text-align: center;
+}
